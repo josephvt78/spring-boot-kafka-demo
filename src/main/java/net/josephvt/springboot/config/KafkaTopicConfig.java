@@ -12,4 +12,9 @@ public class KafkaTopicConfig {
     public NewTopic springkafkaTopic() {
         return TopicBuilder.name("springkafka").build();
     }
+
+    @Bean
+    public NewTopic springkafkaJsonTopic() {
+        return TopicBuilder.name("springkafka_json").build();
+    }
 }
